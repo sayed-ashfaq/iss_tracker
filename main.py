@@ -6,8 +6,8 @@ import smtplib
 MY_LAT = 51.507351 # Your latitude
 MY_LONG = -0.127758 # Your longitude
 
-my_email = "sayedbro725@gmail.com"
-password = "qvaegynxgdzivncg"
+my_email = "yourmail@google.com"
+password = "securitykey"
 
 def iss_overhead():
     response = requests.get(url="http://api.open-notify.org/iss-now.json")
@@ -38,7 +38,7 @@ def is_dark():
 #If the ISS is close to my current position
 # and it is currently dark
 # Then send me an email to tell me to look up.
-# BONUS: run the code every 60 seconds.
+# run the code every 60 seconds.
 
 while True:
     print("Started Running")
@@ -49,7 +49,7 @@ while True:
             connection.login(user=my_email, password=password)
             connection.sendmail(
                 from_addr=my_email,
-                to_addrs="sashfaq229@gmail.com",
+                to_addrs="receivermail@gmail.com",
                 msg="Subject: LookUp for ISS \nThe ISS space Shuttle is going over your head, So Look up!!"
             )
 
