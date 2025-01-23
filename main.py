@@ -50,7 +50,8 @@ while True:
             connection.sendmail(
                 from_addr=my_email,
                 to_addrs="receivermail@gmail.com",
-                msg="Subject: LookUp for ISS \nThe ISS space Shuttle is going over your head, So Look up!!"
+                msg="Subject: LookUp for ISS \n
+                The ISS is currently visible in your area. Step outside, look up, and enjoy the view!"
             )
 
 
