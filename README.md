@@ -9,14 +9,14 @@
 - **Email Notifications**: Get an email prompt to "Look Up!"  
 
 ## 💻 How It Works
-1. The script uses [ISS API](https://wheretheiss.at/) for real-time position data.    
+1. The script uses [ISS API](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) for real-time position data.    
 2. Nighttime conditions are checked using the sunset/sunrise API.  
 3. When all conditions align, you receive an email to view the ISS.  
 
 ## 🚀 Setup
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/yourusername/iss-tracker.git  
+   git clone https://github.com/yourusername/iss_tracker.git  
    ```  
 2. Install dependencies:  
    ```bash  
